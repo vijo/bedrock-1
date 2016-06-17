@@ -2,7 +2,7 @@
 
 'use strict';
 
+var path = require('path');
 var bedrock = require('./lib/bedrock');
 
-// run with development defaults
-bedrock.start();
+bedrock.start({script: path.join(__dirname, 'index.js')});
